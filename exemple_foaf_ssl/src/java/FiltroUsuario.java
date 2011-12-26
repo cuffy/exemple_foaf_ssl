@@ -1,11 +1,12 @@
-
 import java.io.IOException;
-import javax.servlet.Filter;
+import java.security.cert.X509Certificate;
+import java.util.Date;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
 import net.java.dev.sommer.foafssl.j2ee.filter.FoafSSLFilter;
 
 /*
@@ -26,7 +27,35 @@ public class FiltroUsuario extends FoafSSLFilter{
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        System.out.println("Estem al doFilter...");
+        if(request == null){
+            System.out.println();
+            System.out.println();
+            System.out.println("Error NULL al request");
+        }else{
+            System.out.println();
+            System.out.println();
+            System.out.println("OK request");
+        }
+        
+        if(response == null){
+            System.out.println();
+            System.out.println();
+            System.out.println("Error NULL al response");
+        }else{
+            System.out.println();
+            System.out.println();
+            System.out.println("OK response");
+        }
+        
+        if(chain == null){
+            System.out.println();
+            System.out.println();
+            System.out.println("Error NULL al chain");
+        }else{
+            System.out.println();
+            System.out.println();
+            System.out.println("OK chain");
+        }
         super.doFilter(request, response, chain);
     }
 
@@ -34,5 +63,4 @@ public class FiltroUsuario extends FoafSSLFilter{
     public void destroy() {
         super.destroy();
     }
-    
 }
