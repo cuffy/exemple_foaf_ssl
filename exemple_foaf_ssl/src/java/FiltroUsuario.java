@@ -3,10 +3,12 @@ import java.security.cert.X509Certificate;
 import java.util.Date;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import net.java.dev.sommer.foafssl.j2ee.filter.FoafSSLFilter;
 
 /*
@@ -19,6 +21,7 @@ import net.java.dev.sommer.foafssl.j2ee.filter.FoafSSLFilter;
  * @author marc
  */
 public class FiltroUsuario extends FoafSSLFilter{
+    private String urlLogin;
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -27,35 +30,16 @@ public class FiltroUsuario extends FoafSSLFilter{
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        if(request == null){
-            System.out.println();
-            System.out.println();
-            System.out.println("Error NULL al request");
-        }else{
-            System.out.println();
-            System.out.println();
-            System.out.println("OK request");
-        }
-        
-        if(response == null){
-            System.out.println();
-            System.out.println();
-            System.out.println("Error NULL al response");
-        }else{
-            System.out.println();
-            System.out.println();
-            System.out.println("OK response");
-        }
-        
-        if(chain == null){
-            System.out.println();
-            System.out.println();
-            System.out.println("Error NULL al chain");
-        }else{
-            System.out.println();
-            System.out.println();
-            System.out.println("OK chain");
-        }
+        //chain.doFilter(request, response);
+        System.out.println("Holaa"); 
+        // Extraer Sesión
+        //HttpSession session = ((HttpServletRequest)request).getSession();
+        //if(session.getAttribute("nom") == null){
+          //  System.out.println("no hi ha usuari!");
+            //NO s'ha loguejat ningu rediregim al login
+            //RequestDispatcher dispatcher = request.getRequestDispatcher("/"+this.urlLogin);
+            //dispatcher.forward(request, response);
+        //}
         super.doFilter(request, response, chain);
     }
 
