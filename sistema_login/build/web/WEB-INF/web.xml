@@ -6,6 +6,69 @@
     </filter>
     <filter-mapping>
         <filter-name>FOAFSSLFilter</filter-name>
+
+        <url-pattern>/editor/*</url-pattern>
+    </filter-mapping>
+    <!--<security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Entire  Application</web-resource-name>
+            <url-pattern>/editor/*</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+    -->
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>Intranet</realm-name>
+    </login-config>
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Financial Plan</web-resource-name>
+            <url-pattern>/editor/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>employee</role-name>
+
+            <role-name>executive</role-name>
+        </auth-constraint>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+    <security-role>
+        <role-name>employee</role-name>
+
+    </security-role>
+    <security-role>
+        <role-name>executive</role-name>
+    </security-role>
+    
+    <!--<error-page>
+        <error-code>401</error-code>
+        <location>/index.jsp</location>
+
+    </error-page>
+    <error-page>
+        <exception-type>ServletException</exception-type>
+        <location>/index.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+
+        <location>/index.jsp</location>
+    </error-page>-->
+</web-app>
+<!--<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <filter>
+        <filter-name>FOAFSSLFilter</filter-name>
+        <filter-class>net.java.dev.sommer.foafssl.j2ee.filter.FoafSSLFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FOAFSSLFilter</filter-name>
         <url-pattern>/editor/index.jsp</url-pattern>
     </filter-mapping>
     <security-constraint>
@@ -17,4 +80,4 @@
             <transport-guarantee>CONFIDENTIAL</transport-guarantee>
         </user-data-constraint>
     </security-constraint>
-</web-app>
+</web-app>-->
