@@ -1,0 +1,6 @@
+SSLOptions +StdEnvVars
+SSLVerifyClient optional
+SSLVerifyDepth 3
+RewriteEngine On
+RewriteCond %{SSL:SSL_CLIENT_VERIFY} !^SUCCESS$
+RewriteRule .* /help/ssl-client-auth-required.html [L]

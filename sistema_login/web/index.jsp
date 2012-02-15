@@ -20,7 +20,6 @@
                                 <ul>
                                     <li><a href="./index.jsp">Apartat public</a></li>
                                     <li><a href="./editor/">Apartat private</a></li>
-                                    <li><a href="./editor/login.jsp">Apartat private login</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -34,12 +33,7 @@
                 </section>
                 <footer>
                     <div id="footer">
-                        <a href="#" >Terms</a> -
-                        <a href="#" >Privacy</a> -
-                        <a href="#">Report bug or request a feature</a> -
-                        <a href="#">Follow us on Twitter</a> -
-                        <a href="#" >About Authors</a>
-                        <span class="madeby">Made by M</span>
+                        m
                    </div>
                 </footer>
             </div>
