@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+   <branch instances="3" label="Product" uri="http://swrc.ontoware.org/ontology#Product">
+      <node instances="0" label="SoftwareComponent"
+            uri="http://swrc.ontoware.org/ontology#SoftwareComponent"/>
+   </branch>
+   <branch instances="0" label="Event" uri="http://swrc.ontoware.org/ontology#Event">
+      <node instances="0" label="Lecture" uri="http://swrc.ontoware.org/ontology#Lecture"/>
+      <node instances="0" label="Workshop" uri="http://swrc.ontoware.org/ontology#Workshop"/>
+      <node instances="0" label="Meeting" uri="http://swrc.ontoware.org/ontology#Meeting">
+         <node instances="0" label="ProjectMeeting"
+               uri="http://swrc.ontoware.org/ontology#ProjectMeeting"/>
+      </node>
+      <node instances="0" label="Conference"
+            uri="http://swrc.ontoware.org/ontology#Conference"/>
+      <node instances="0" label="Exhibition"
+            uri="http://swrc.ontoware.org/ontology#Exhibition"/>
+   </branch>
+   <branch instances="0" label="Thing" uri="http://www.daml.org/2001/03/daml+oil#Thing"/>
+   <branch instances="0" label="Project" uri="http://swrc.ontoware.org/ontology#Project">
+      <node instances="0" label="DevelopmentProject"
+            uri="http://swrc.ontoware.org/ontology#DevelopmentProject">
+         <node instances="1" label="SoftwareProject"
+               uri="http://swrc.ontoware.org/ontology#SoftwareProject"/>
+      </node>
+      <node instances="1" label="ResearchProject"
+            uri="http://swrc.ontoware.org/ontology#ResearchProject"/>
+   </branch>
+   <branch instances="0" label="Topic" uri="http://swrc.ontoware.org/ontology#Topic">
+      <node instances="0" label="ResearchTopic"
+            uri="http://swrc.ontoware.org/ontology#ResearchTopic"/>
+   </branch>
+   <branch instances="0" label="Organization"
+           uri="http://swrc.ontoware.org/ontology#Organization">
+      <node instances="0" label="Association"
+            uri="http://swrc.ontoware.org/ontology#Association"/>
+      <node instances="0" label="Institute"
+            uri="http://swrc.ontoware.org/ontology#Institute"/>
+      <node instances="1" label="Department"
+            uri="http://swrc.ontoware.org/ontology#Department"/>
+      <node instances="0" label="ResearchGroup"
+            uri="http://swrc.ontoware.org/ontology#ResearchGroup"/>
+      <node instances="0" label="Enterprise"
+            uri="http://swrc.ontoware.org/ontology#Enterprise"/>
+      <node instances="1" label="University"
+            uri="http://swrc.ontoware.org/ontology#University"/>
+   </branch>
+   <branch instances="0" label="Person" uri="http://swrc.ontoware.org/ontology#Person">
+      <node instances="0" label="Student" uri="http://swrc.ontoware.org/ontology#Student">
+         <node instances="0" label="Undergraduate"
+               uri="http://swrc.ontoware.org/ontology#Undergraduate"/>
+         <node instances="0" label="Graduate" uri="http://swrc.ontoware.org/ontology#Graduate">
+            <node instances="0" label="PhDStudent"
+                  uri="http://swrc.ontoware.org/ontology#PhDStudent"/>
+         </node>
+      </node>
+      <node instances="0" label="Employee" uri="http://swrc.ontoware.org/ontology#Employee">
+         <node instances="0" label="Manager" uri="http://swrc.ontoware.org/ontology#Manager"/>
+         <node instances="0" label="AcademicStaff"
+               uri="http://swrc.ontoware.org/ontology#AcademicStaff">
+            <node instances="0" label="Lecturer" uri="http://swrc.ontoware.org/ontology#Lecturer"/>
+            <node instances="0" label="FacultyMember"
+                  uri="http://swrc.ontoware.org/ontology#FacultyMember"/>
+         </node>
+         <node instances="0" label="TechnicalStaff"
+               uri="http://swrc.ontoware.org/ontology#TechnicalStaff"/>
+         <node instances="0" label="AdministrativeStaff"
+               uri="http://swrc.ontoware.org/ontology#AdministrativeStaff"/>
+      </node>
+   </branch>
+   <branch instances="0" label="Publication"
+           uri="http://swrc.ontoware.org/ontology#Publication">
+      <node instances="0" label="InCollection"
+            uri="http://swrc.ontoware.org/ontology#InCollection"/>
+      <node instances="0" label="Article" uri="http://swrc.ontoware.org/ontology#Article"/>
+      <node instances="0" label="Thesis" uri="http://swrc.ontoware.org/ontology#Thesis">
+         <node instances="0" label="MasterThesis"
+               uri="http://swrc.ontoware.org/ontology#MasterThesis"/>
+         <node instances="0" label="PhDThesis"
+               uri="http://swrc.ontoware.org/ontology#PhDThesis"/>
+      </node>
+      <node instances="0" label="Booklet" uri="http://swrc.ontoware.org/ontology#Booklet"/>
+      <node instances="0" label="Misc" uri="http://swrc.ontoware.org/ontology#Misc"/>
+      <node instances="1" label="InProceedings"
+            uri="http://swrc.ontoware.org/ontology#InProceedings"/>
+      <node instances="0" label="Proceedings"
+            uri="http://swrc.ontoware.org/ontology#Proceedings"/>
+      <node instances="0" label="Report" uri="http://swrc.ontoware.org/ontology#Report">
+         <node instances="0" label="TechnicalReport"
+               uri="http://swrc.ontoware.org/ontology#TechnicalReport"/>
+         <node instances="0" label="ProjectReport"
+               uri="http://swrc.ontoware.org/ontology#ProjectReport"/>
+      </node>
+      <node instances="0" label="InBook" uri="http://swrc.ontoware.org/ontology#InBook"/>
+      <node instances="0" label="Book" uri="http://swrc.ontoware.org/ontology#Book"/>
+      <node instances="0" label="Unpublished"
+            uri="http://swrc.ontoware.org/ontology#Unpublished"/>
+      <node instances="0" label="Manual" uri="http://swrc.ontoware.org/ontology#Manual"/>
+   </branch>
+   <branch instances="151" label="Property"
+           uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+      <node instances="0" label="ContainerMembershipProperty"
+            uri="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+   </branch>
+   <branch instances="1" label="List"
+           uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+   <branch instances="239" label="Resource"
+           uri="http://www.w3.org/2000/01/rdf-schema#Resource">
+      <node instances="0" label="TGN" uri="http://purl.org/dc/terms/TGN"/>
+      <node instances="0" label="ISO3166" uri="http://purl.org/dc/terms/ISO3166"/>
+      <node instances="0" label="DateScheme" uri="http://purl.org/dc/terms/DateScheme"/>
+      <node instances="0" label="Box" uri="http://purl.org/dc/terms/Box"/>
+      <node instances="0" label="FormatScheme" uri="http://purl.org/dc/terms/FormatScheme"/>
+      <node instances="0" label="MESH" uri="http://purl.org/dc/terms/MESH"/>
+      <node instances="0" label="pref" uri="http://www.w3.org/2001/vcard-rdf/3.0#pref"/>
+      <node instances="0" label="URI" uri="http://purl.org/dc/terms/URI"/>
+      <node instances="0" label="Online Chat Account"
+            uri="http://xmlns.com/foaf/0.1/OnlineChatAccount"/>
+      <node instances="0" label="Image" uri="http://xmlns.com/foaf/0.1/Image"/>
+      <node instances="0" label="Online E-commerce Account"
+            uri="http://xmlns.com/foaf/0.1/OnlineEcommerceAccount"/>
+      <node instances="0" label="LCC" uri="http://purl.org/dc/terms/LCC"/>
+      <node instances="0" label="Literal"
+            uri="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+      <node instances="0" label="Project" uri="http://xmlns.com/foaf/0.1/Project"/>
+      <node instances="0" label="Point" uri="http://purl.org/dc/terms/Point"/>
+      <node instances="0" label="Software" uri="http://purl.org/dc/dcmitype/Software"/>
+      <node instances="0" label="W3CDTF" uri="http://purl.org/dc/terms/W3CDTF"/>
+      <node instances="0" label="IMT" uri="http://purl.org/dc/terms/IMT"/>
+      <node instances="0" label="RelationScheme"
+            uri="http://purl.org/dc/terms/RelationScheme"/>
+      <node instances="0" label="Event" uri="http://purl.org/dc/dcmitype/Event"/>
+      <node instances="1" label="List"
+            uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+      <node instances="0" label="Dataset" uri="http://purl.org/dc/dcmitype/Dataset"/>
+      <node instances="0" label="Agent" uri="http://xmlns.com/foaf/0.1/Agent">
+         <node instances="0" label="Organization" uri="http://xmlns.com/foaf/0.1/Organization"/>
+         <node instances="0" label="Group" uri="http://xmlns.com/foaf/0.1/Group"/>
+         <node instances="0" label="Person" uri="http://xmlns.com/foaf/0.1/Person"/>
+      </node>
+      <node instances="0" label="NPROPERTIES"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#NPROPERTIES">
+         <node instances="0" label="Suffix Name"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Suffix"/>
+         <node instances="0" label="Given Name"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Given"/>
+         <node instances="0" label="Prefix Name"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Prefix"/>
+         <node instances="0" label="Other Names"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Other"/>
+         <node instances="0" label="Family Name"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Family"/>
+      </node>
+      <node instances="0" label="Period" uri="http://purl.org/dc/terms/Period"/>
+      <node instances="0" label="Online Gaming Account"
+            uri="http://xmlns.com/foaf/0.1/OnlineGamingAccount"/>
+      <node instances="0" label="Sound" uri="http://purl.org/dc/dcmitype/Sound"/>
+      <node instances="0" label="Online Account"
+            uri="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+      <node instances="0" label="PhysicalObject"
+            uri="http://purl.org/dc/dcmitype/PhysicalObject"/>
+      <node instances="0" label="SpatialScheme"
+            uri="http://purl.org/dc/terms/SpatialScheme"/>
+      <node instances="0" label="RFC1766" uri="http://purl.org/dc/terms/RFC1766"/>
+      <node instances="0" label="IdentifierScheme"
+            uri="http://purl.org/dc/terms/IdentifierScheme"/>
+      <node instances="0" label="EMAILTYPES"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#EMAILTYPES"/>
+      <node instances="0" label="work" uri="http://www.w3.org/2001/vcard-rdf/3.0#work"/>
+      <node instances="0" label="ORGPROPERTIES"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#ORGPROPERTIES">
+         <node instances="0" label="Organisation Name"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Orgname"/>
+         <node instances="0" label="Organisation Unit"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Orgunit"/>
+      </node>
+      <node instances="0" label="SubjectScheme"
+            uri="http://purl.org/dc/terms/SubjectScheme"/>
+      <node instances="0" label="TELTYPES"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#TELTYPES"/>
+      <node instances="0" label="InteractiveResource"
+            uri="http://purl.org/dc/dcmitype/InteractiveResource"/>
+      <node instances="0" label="ADRTYPES"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#ADRTYPES">
+         <node instances="0" label="ADRPROPERTIES"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#ADRPROPERTIES">
+            <node instances="0" label="Region/State"
+                  uri="http://www.w3.org/2001/vcard-rdf/3.0#Region"/>
+            <node instances="0" label="Postal Code"
+                  uri="http://www.w3.org/2001/vcard-rdf/3.0#Pcode"/>
+            <node instances="0" label="Street" uri="http://www.w3.org/2001/vcard-rdf/3.0#Street"/>
+            <node instances="0" label="Extended Address"
+                  uri="http://www.w3.org/2001/vcard-rdf/3.0#Extadd"/>
+            <node instances="0" label="Post Office Box"
+                  uri="http://www.w3.org/2001/vcard-rdf/3.0#Pobox"/>
+            <node instances="0" label="Country"
+                  uri="http://www.w3.org/2001/vcard-rdf/3.0#Country"/>
+         </node>
+      </node>
+      <node instances="0" label="DDC" uri="http://purl.org/dc/terms/DDC"/>
+      <node instances="151" label="Property"
+            uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+         <node instances="0" label="ContainerMembershipProperty"
+               uri="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+      </node>
+      <node instances="0" label="TemporalScheme"
+            uri="http://purl.org/dc/terms/TemporalScheme"/>
+      <node instances="0" label="Text" uri="http://purl.org/dc/dcmitype/Text"/>
+      <node instances="0" label="Document" uri="http://xmlns.com/foaf/0.1/Document">
+         <node instances="0" label="PersonalProfileDocument"
+               uri="http://xmlns.com/foaf/0.1/PersonalProfileDocument"/>
+      </node>
+      <node instances="0" label="LanguageScheme"
+            uri="http://purl.org/dc/terms/LanguageScheme"/>
+      <node instances="0" label="UDC" uri="http://purl.org/dc/terms/UDC"/>
+      <node instances="0" label="SourceScheme" uri="http://purl.org/dc/terms/SourceScheme"/>
+      <node instances="0" label="TypeScheme" uri="http://purl.org/dc/terms/TypeScheme"/>
+      <node instances="0" label="RFC3066" uri="http://purl.org/dc/terms/RFC3066"/>
+      <node instances="0" label="DCMIType" uri="http://purl.org/dc/terms/DCMIType"/>
+      <node instances="0" label="Class" uri="http://www.w3.org/2000/01/rdf-schema#Class">
+         <node instances="1" label="Datatype"
+               uri="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+      </node>
+      <node instances="0" label="Image" uri="http://purl.org/dc/dcmitype/Image">
+         <node instances="0" label="StillImage" uri="http://purl.org/dc/dcmitype/StillImage"/>
+         <node instances="0" label="MovingImage" uri="http://purl.org/dc/dcmitype/MovingImage"/>
+      </node>
+      <node instances="0" label="ISO639-2" uri="http://purl.org/dc/terms/ISO639-2"/>
+      <node instances="0" label="Service" uri="http://purl.org/dc/dcmitype/Service"/>
+      <node instances="0" label="LCSH" uri="http://purl.org/dc/terms/LCSH"/>
+      <node instances="0" label="SpatialThing"
+            uri="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+         <node instances="0" label="Person" uri="http://xmlns.com/foaf/0.1/Person"/>
+      </node>
+      <node instances="0" label="Collection" uri="http://purl.org/dc/dcmitype/Collection"/>
+      <node instances="0" label="home" uri="http://www.w3.org/2001/vcard-rdf/3.0#home"/>
+      <node instances="0" label="TZTYPES"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#TZTYPES"/>
+      <node instances="0" label="Statement"
+            uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+   </branch>
+   <branch instances="229" label="Class" uri="http://www.w3.org/2000/01/rdf-schema#Class">
+      <node instances="1" label="Datatype"
+            uri="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+   </branch>
+   <branch instances="0" label="Statement"
+           uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+   <branch instances="0" label="SpatialThing"
+           uri="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+      <node instances="0" label="Person" uri="http://xmlns.com/foaf/0.1/Person"/>
+   </branch>
+   <branch instances="0" label="Literal"
+           uri="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+   <branch instances="0" label="URI" uri="http://purl.org/dc/terms/URI"/>
+   <branch instances="1" label="FormatScheme" uri="http://purl.org/dc/terms/FormatScheme"/>
+   <branch instances="1" label="TypeScheme" uri="http://purl.org/dc/terms/TypeScheme"/>
+   <branch instances="0" label="ISO3166" uri="http://purl.org/dc/terms/ISO3166"/>
+   <branch instances="2" label="DateScheme" uri="http://purl.org/dc/terms/DateScheme"/>
+   <branch instances="0" label="PhysicalObject"
+           uri="http://purl.org/dc/dcmitype/PhysicalObject"/>
+   <branch instances="0" label="Service" uri="http://purl.org/dc/dcmitype/Service"/>
+   <branch instances="0" label="W3CDTF" uri="http://purl.org/dc/terms/W3CDTF"/>
+   <branch instances="0" label="Point" uri="http://purl.org/dc/terms/Point"/>
+   <branch instances="2" label="EMAILTYPES"
+           uri="http://www.w3.org/2001/vcard-rdf/3.0#EMAILTYPES"/>
+   <branch instances="1" label="TZTYPES"
+           uri="http://www.w3.org/2001/vcard-rdf/3.0#TZTYPES"/>
+   <branch instances="9" label="ADRTYPES"
+           uri="http://www.w3.org/2001/vcard-rdf/3.0#ADRTYPES">
+      <node instances="0" label="ADRPROPERTIES"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#ADRPROPERTIES">
+         <node instances="0" label="Region/State"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Region"/>
+         <node instances="0" label="Postal Code"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Pcode"/>
+         <node instances="0" label="Street" uri="http://www.w3.org/2001/vcard-rdf/3.0#Street"/>
+         <node instances="0" label="Extended Address"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Extadd"/>
+         <node instances="0" label="Post Office Box"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Pobox"/>
+         <node instances="0" label="Country"
+               uri="http://www.w3.org/2001/vcard-rdf/3.0#Country"/>
+      </node>
+   </branch>
+   <branch instances="1" label="SourceScheme" uri="http://purl.org/dc/terms/SourceScheme"/>
+   <branch instances="0" label="LCC" uri="http://purl.org/dc/terms/LCC"/>
+   <branch instances="0" label="UDC" uri="http://purl.org/dc/terms/UDC"/>
+   <branch instances="0" label="Box" uri="http://purl.org/dc/terms/Box"/>
+   <branch instances="13" label="TELTYPES"
+           uri="http://www.w3.org/2001/vcard-rdf/3.0#TELTYPES"/>
+   <branch instances="0" label="MESH" uri="http://purl.org/dc/terms/MESH"/>
+   <branch instances="0" label="home" uri="http://www.w3.org/2001/vcard-rdf/3.0#home"/>
+   <branch instances="0" label="Online Account"
+           uri="http://xmlns.com/foaf/0.1/OnlineAccount"/>
+   <branch instances="0" label="IMT" uri="http://purl.org/dc/terms/IMT"/>
+   <branch instances="0" label="RFC1766" uri="http://purl.org/dc/terms/RFC1766"/>
+   <branch instances="0" label="Image" uri="http://purl.org/dc/dcmitype/Image">
+      <node instances="0" label="StillImage" uri="http://purl.org/dc/dcmitype/StillImage"/>
+      <node instances="0" label="MovingImage" uri="http://purl.org/dc/dcmitype/MovingImage"/>
+   </branch>
+   <branch instances="0" label="ISO639-2" uri="http://purl.org/dc/terms/ISO639-2"/>
+   <branch instances="1" label="IdentifierScheme"
+           uri="http://purl.org/dc/terms/IdentifierScheme"/>
+   <branch instances="4" label="work" uri="http://www.w3.org/2001/vcard-rdf/3.0#work"/>
+   <branch instances="0" label="InteractiveResource"
+           uri="http://purl.org/dc/dcmitype/InteractiveResource"/>
+   <branch instances="2" label="TemporalScheme"
+           uri="http://purl.org/dc/terms/TemporalScheme"/>
+   <branch instances="0" label="Period" uri="http://purl.org/dc/terms/Period"/>
+   <branch instances="12" label="DCMIType" uri="http://purl.org/dc/terms/DCMIType"/>
+   <branch instances="0" label="pref" uri="http://www.w3.org/2001/vcard-rdf/3.0#pref"/>
+   <branch instances="0" label="DDC" uri="http://purl.org/dc/terms/DDC"/>
+   <branch instances="0" label="RFC3066" uri="http://purl.org/dc/terms/RFC3066"/>
+   <branch instances="0" label="Text" uri="http://purl.org/dc/dcmitype/Text"/>
+   <branch instances="4" label="SpatialScheme"
+           uri="http://purl.org/dc/terms/SpatialScheme"/>
+   <branch instances="5" label="SubjectScheme"
+           uri="http://purl.org/dc/terms/SubjectScheme"/>
+   <branch instances="0" label="Dataset" uri="http://purl.org/dc/dcmitype/Dataset"/>
+   <branch instances="0" label="Software" uri="http://purl.org/dc/dcmitype/Software"/>
+   <branch instances="1" label="RelationScheme"
+           uri="http://purl.org/dc/terms/RelationScheme"/>
+   <branch instances="0" label="LCSH" uri="http://purl.org/dc/terms/LCSH"/>
+   <branch instances="0" label="Sound" uri="http://purl.org/dc/dcmitype/Sound"/>
+   <branch instances="3" label="LanguageScheme"
+           uri="http://purl.org/dc/terms/LanguageScheme"/>
+   <branch instances="2" label="NPROPERTIES"
+           uri="http://www.w3.org/2001/vcard-rdf/3.0#NPROPERTIES">
+      <node instances="0" label="Suffix Name"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#Suffix"/>
+      <node instances="0" label="Given Name"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#Given"/>
+      <node instances="0" label="Prefix Name"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#Prefix"/>
+      <node instances="0" label="Other Names"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#Other"/>
+      <node instances="0" label="Family Name"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#Family"/>
+   </branch>
+   <branch instances="0" label="TGN" uri="http://purl.org/dc/terms/TGN"/>
+   <branch instances="0" label="ORGPROPERTIES"
+           uri="http://www.w3.org/2001/vcard-rdf/3.0#ORGPROPERTIES">
+      <node instances="0" label="Organisation Name"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#Orgname"/>
+      <node instances="0" label="Organisation Unit"
+            uri="http://www.w3.org/2001/vcard-rdf/3.0#Orgunit"/>
+   </branch>
+   <branch instances="0" label="Collection" uri="http://purl.org/dc/dcmitype/Collection"/>
+   <branch instances="0" label="Event" uri="http://purl.org/dc/dcmitype/Event"/>
+   <branch instances="0" label="Person" uri="http://xmlns.com/wordnet/1.6/Person">
+      <node instances="0" label="Person" uri="http://xmlns.com/foaf/0.1/Person"/>
+   </branch>
+   <branch instances="0" label="Document" uri="http://xmlns.com/wordnet/1.6/Document">
+      <node instances="0" label="Document" uri="http://xmlns.com/foaf/0.1/Document">
+         <node instances="0" label="PersonalProfileDocument"
+               uri="http://xmlns.com/foaf/0.1/PersonalProfileDocument"/>
+      </node>
+      <node instances="0" label="Image" uri="http://xmlns.com/foaf/0.1/Image"/>
+   </branch>
+   <branch instances="0" label="Organization"
+           uri="http://xmlns.com/wordnet/1.6/Organization">
+      <node instances="0" label="Organization" uri="http://xmlns.com/foaf/0.1/Organization"/>
+   </branch>
+   <branch instances="0" label="Person"
+           uri="http://www.w3.org/2000/10/swap/pim/contact#Person">
+      <node instances="0" label="Person" uri="http://xmlns.com/foaf/0.1/Person"/>
+   </branch>
+   <branch instances="0" label="OnlineAccount"
+           uri="http://xmlns.com/wordnet/1.6/OnlineAccount">
+      <node instances="0" label="Online Chat Account"
+            uri="http://xmlns.com/foaf/0.1/OnlineChatAccount"/>
+      <node instances="0" label="Online Gaming Account"
+            uri="http://xmlns.com/foaf/0.1/OnlineGamingAccount"/>
+      <node instances="0" label="Online E-commerce Account"
+            uri="http://xmlns.com/foaf/0.1/OnlineEcommerceAccount"/>
+   </branch>
+   <branch instances="0" label="Project" uri="http://xmlns.com/wordnet/1.6/Project">
+      <node instances="0" label="Project" uri="http://xmlns.com/foaf/0.1/Project"/>
+   </branch>
+   <branch instances="0" label="Agent-3" uri="http://xmlns.com/wordnet/1.6/Agent-3">
+      <node instances="0" label="Agent" uri="http://xmlns.com/foaf/0.1/Agent">
+         <node instances="0" label="Organization" uri="http://xmlns.com/foaf/0.1/Organization"/>
+         <node instances="0" label="Group" uri="http://xmlns.com/foaf/0.1/Group"/>
+         <node instances="0" label="Person" uri="http://xmlns.com/foaf/0.1/Person"/>
+      </node>
+   </branch>
+   <branch instances="0" label="Container"
+           uri="http://www.w3.org/2000/01/rdf-schema#Container">
+      <node instances="0" label="Bag" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+      <node instances="1" label="Seq" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+      <node instances="0" label="Alt" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+   </branch>
+   <branch instances="0" label="XMLLiteral"
+           uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+   <branch instances="44" label="ObjectProperty"
+           uri="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+   <branch instances="55" label="Class" uri="http://www.w3.org/2002/07/owl#Class"/>
+   <branch instances="12" label="AnnotationProperty"
+           uri="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+   <branch instances="1" label="item" uri="http://purl.org/rss/1.0/item"/>
+   <branch instances="68" label="Restriction"
+           uri="http://www.w3.org/2002/07/owl#Restriction"/>
+   <branch instances="2" label="voice" uri="http://www.w3.org/2001/vcard-rdf/3.0#voice"/>
+   <branch instances="9" label="InverseFunctionalProperty"
+           uri="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+   <branch instances="30" label="DatatypeProperty"
+           uri="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+   <branch instances="4" label="Ontology" uri="http://www.w3.org/2002/07/owl#Ontology"/>
+   <branch instances="3" label="FunctionalProperty"
+           uri="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+   <branch instances="1" label="channel" uri="http://purl.org/rss/1.0/channel"/>
+   <branch instances="3" label="internet"
+           uri="http://www.w3.org/2001/vcard-rdf/3.0#internet"/>
+</tree>

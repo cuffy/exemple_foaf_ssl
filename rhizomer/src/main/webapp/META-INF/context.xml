@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context crossContext="true" debug="0" path="/rhizomer" reloadable="true">
+  <!-- Realm className="org.apache.catalina.realm.MemoryRealm"
+		pathname="webapps/rhizomer/META-INF/users.xml"/ -->
+  <!-- Realm className="com.sun.enterprise.security.auth.realm.file.FileRealm" pathname="config/keyfile"/ -->
+</Context>
