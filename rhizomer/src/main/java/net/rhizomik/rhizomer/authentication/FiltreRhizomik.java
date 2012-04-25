@@ -3,13 +3,15 @@ package net.rhizomik.rhizomer.authentication;
 [Iterator]-->[LoginFormulari]
 [Iterator]^-.-[IteratorFitxer]*/
 import java.io.IOException;
-import javax.security.cert.X509Certificate;
+import java.security.cert.X509Certificate;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import net.java.dev.sommer.foafssl.j2ee.filter.FoafSSLFilter;
 import net.rhizomik.rhizomer.authentication.Constants.Constants;
 
@@ -28,6 +30,7 @@ public class FiltreRhizomik implements Filter {
     }
 
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        HttpSession session = ((HttpServletRequest)request).getSession(true);
         if (request.getAttribute("javax.servlet.request.X509Certificate") == null) {
             request.setAttribute("javax.servlet.request.X509Certificate", new X509Certificate[]{this.x509Certificate});
             if (this.login.sha_de_autentificar(request)) {
@@ -36,7 +39,7 @@ public class FiltreRhizomik implements Filter {
                 this.login.obtenir_dades();
                 try{
                     if (this.login.son_valides()) {
-                        request.setAttribute(Constants.NOM_SESSIO_USUARI, this.login.getUsuari());
+                        session.setAttribute(Constants.NOM_SESSIO_USUARI, this.login.getUsuari());
                         chain.doFilter(request, response);
                     } else {
                         this.login.mostrar_formulari(response);
@@ -46,8 +49,8 @@ public class FiltreRhizomik implements Filter {
                 }
             }
         } else {
-            X509Certificate[] certs = (X509Certificate[]) request.getAttribute("javax.servlet.request.X509Certificate");
-            request.setAttribute(Constants.NOM_SESSIO_USUARI, certs[0].getSubjectDN().toString());
+            X509Certificate cert[] = (X509Certificate[])request.getAttribute("javax.servlet.request.X509Certificate");
+            session.setAttribute(Constants.NOM_SESSIO_USUARI, cert[0].getSubjectDN().toString());
             this.foaf_ssl.doFilter(request, response, chain);
         }
     }

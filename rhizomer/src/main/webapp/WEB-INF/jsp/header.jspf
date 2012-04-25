@@ -82,11 +82,10 @@
 <body class="yui-skin-sam yui3-skin-sam">
 <div id="header">
 	<div id="login">
-            <% //out.print(request.getAttribute(Constants.NOM_SESSIO_USUARI));
-                    if (request.getAttribute(Constants.NOM_SESSIO_USUARI) == null) { %>
+            <% if (request.getSession().getAttribute(Constants.NOM_SESSIO_USUARI) == null) { %>
 		<a href="<%=request.getContextPath()%>/html/admin/login.jsp">login</a>
 	<% } else { %>
-	   		<div id="username"><a href="<%=request.getContextPath()%>/html/admin/"><%=request.getAttribute(Constants.NOM_SESSIO_USUARI)%></a></div>&nbsp;|&nbsp;<a href="<%=request.getContextPath()%>/html/admin/logout.jsp">logout</a>
+	   		<div id="username"><a href="<%=request.getContextPath()%>/html/admin/"><%=request.getSession().getAttribute(Constants.NOM_SESSIO_USUARI)%></a></div>&nbsp;|&nbsp;<a href="<%=request.getContextPath()%>/html/admin/logout.jsp">logout</a>
 	<% } %>
 	</div>
  	
