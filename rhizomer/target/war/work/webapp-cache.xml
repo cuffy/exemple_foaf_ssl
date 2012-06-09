@@ -34,6 +34,7 @@
           <string>style/rdf2html.xsl</string>
           <string>META-INF/MANIFEST.MF</string>
           <string>META-INF/context.xml</string>
+          <string>META-INF/services/net.java.dev.sommer.foafssl.verifier.FoafSslVerifier</string>
           <string>META-INF/users.xml</string>
           <string>WEB-INF/lib/sesame-rio-rdfxml-2.3.1.jar</string>
           <string>WEB-INF/lib/htmlparser-1.2.0.jar</string>
@@ -81,6 +82,7 @@
           <string>WEB-INF/lib/sesame-queryparser-sparql-2.3.1.jar</string>
           <string>WEB-INF/lib/sesame-sail-inferencer-2.3.1.jar</string>
           <string>WEB-INF/foafssl-identity-provider-0.5-SNAPSHOT.jar</string>
+          <string>WEB-INF/usuaris.rdf</string>
           <string>WEB-INF/foafssl-verifier-sesame-0.5-SNAPSHOT.jar</string>
           <string>WEB-INF/foafssl-verifier-0.5-SNAPSHOT.jar</string>
           <string>WEB-INF/menuconfig.skos.xml</string>
@@ -489,6 +491,7 @@
           <string>WEB-INF/classes/net/rhizomik/rhizomer/service/ServiceManager.class</string>
           <string>WEB-INF/classes/net/rhizomik/rhizomer/service/Service.class</string>
           <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/FiltreRhizomik.class</string>
+          <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/SesameFoafSslRhizomer.class</string>
           <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/Iterator.class</string>
           <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/IteratorFitxer.class</string>
           <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/fitxerUsuaris/Usuari.class</string>
