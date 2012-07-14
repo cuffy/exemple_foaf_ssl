@@ -52,7 +52,7 @@ public class SesameFoafSslRhizomer extends FoafSslVerifier {
 
    @Override
     public boolean verify(WebIdClaim webid) {
-
+       System.out.println("Ha entrat a "+getClass().getSimpleName());
         GraphCache cache = GraphCacheLookup.getCache();
 
         // do a check that this is indeed a URL first

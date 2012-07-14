@@ -81,10 +81,7 @@
           <string>WEB-INF/lib/org.apache.felix.scr.annotations-1.6.0.jar</string>
           <string>WEB-INF/lib/sesame-queryparser-sparql-2.3.1.jar</string>
           <string>WEB-INF/lib/sesame-sail-inferencer-2.3.1.jar</string>
-          <string>WEB-INF/foafssl-identity-provider-0.5-SNAPSHOT.jar</string>
           <string>WEB-INF/usuaris.rdf</string>
-          <string>WEB-INF/foafssl-verifier-sesame-0.5-SNAPSHOT.jar</string>
-          <string>WEB-INF/foafssl-verifier-0.5-SNAPSHOT.jar</string>
           <string>WEB-INF/menuconfig.skos.xml</string>
           <string>WEB-INF/urlrewrite.xml</string>
           <string>WEB-INF/menuconfig.xml</string>
@@ -97,7 +94,6 @@
           <string>WEB-INF/jsp/view.jsp</string>
           <string>WEB-INF/usuaris.txt</string>
           <string>WEB-INF/web.xml</string>
-          <string>WEB-INF/foafssl-filter-0.5-SNAPSHOT.jar</string>
           <string>WEB-INF/classes/cacert.p12</string>
           <string>WEB-INF/classes/org/apache/clerezza/ssl/keygen/KeygenService.class</string>
           <string>WEB-INF/classes/org/apache/clerezza/ssl/keygen/CertSerialisation.class</string>

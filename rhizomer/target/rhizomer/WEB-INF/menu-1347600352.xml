@@ -394,13 +394,12 @@
            uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
    <branch instances="44" label="ObjectProperty"
            uri="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+   <branch instances="68" label="Restriction"
+           uri="http://www.w3.org/2002/07/owl#Restriction"/>
    <branch instances="55" label="Class" uri="http://www.w3.org/2002/07/owl#Class"/>
    <branch instances="12" label="AnnotationProperty"
            uri="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
    <branch instances="1" label="item" uri="http://purl.org/rss/1.0/item"/>
-   <branch instances="68" label="Restriction"
-           uri="http://www.w3.org/2002/07/owl#Restriction"/>
-   <branch instances="2" label="voice" uri="http://www.w3.org/2001/vcard-rdf/3.0#voice"/>
    <branch instances="9" label="InverseFunctionalProperty"
            uri="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
    <branch instances="30" label="DatatypeProperty"
@@ -408,7 +407,8 @@
    <branch instances="4" label="Ontology" uri="http://www.w3.org/2002/07/owl#Ontology"/>
    <branch instances="3" label="FunctionalProperty"
            uri="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-   <branch instances="1" label="channel" uri="http://purl.org/rss/1.0/channel"/>
    <branch instances="3" label="internet"
            uri="http://www.w3.org/2001/vcard-rdf/3.0#internet"/>
+   <branch instances="1" label="channel" uri="http://purl.org/rss/1.0/channel"/>
+   <branch instances="2" label="voice" uri="http://www.w3.org/2001/vcard-rdf/3.0#voice"/>
 </tree>
