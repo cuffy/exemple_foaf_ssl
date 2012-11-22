@@ -386,9 +386,9 @@
    </branch>
    <branch instances="0" label="Container"
            uri="http://www.w3.org/2000/01/rdf-schema#Container">
-      <node instances="0" label="Bag" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
       <node instances="0" label="Alt" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
       <node instances="1" label="Seq" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+      <node instances="0" label="Bag" uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
    </branch>
    <branch instances="0" label="XMLLiteral"
            uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
@@ -402,13 +402,13 @@
    <branch instances="1" label="item" uri="http://purl.org/rss/1.0/item"/>
    <branch instances="9" label="InverseFunctionalProperty"
            uri="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+   <branch instances="3" label="internet"
+           uri="http://www.w3.org/2001/vcard-rdf/3.0#internet"/>
    <branch instances="30" label="DatatypeProperty"
            uri="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
    <branch instances="4" label="Ontology" uri="http://www.w3.org/2002/07/owl#Ontology"/>
    <branch instances="3" label="FunctionalProperty"
            uri="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-   <branch instances="2" label="voice" uri="http://www.w3.org/2001/vcard-rdf/3.0#voice"/>
    <branch instances="1" label="channel" uri="http://purl.org/rss/1.0/channel"/>
-   <branch instances="3" label="internet"
-           uri="http://www.w3.org/2001/vcard-rdf/3.0#internet"/>
+   <branch instances="2" label="voice" uri="http://www.w3.org/2001/vcard-rdf/3.0#voice"/>
 </tree>

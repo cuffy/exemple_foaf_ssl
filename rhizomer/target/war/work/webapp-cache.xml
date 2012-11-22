@@ -109,7 +109,6 @@
           <string>WEB-INF/classes/org/apache/clerezza/ssl/keygen/bouncy/StaticKeygenService.class</string>
           <string>WEB-INF/classes/org/apache/clerezza/ssl/keygen/PubKey.class</string>
           <string>WEB-INF/classes/META-INF/components.txt</string>
-          <string>WEB-INF/classes/META-INF/services/net.java.dev.sommer.foafssl.verifier.FoafSslVerifier</string>
           <string>WEB-INF/classes/index.html</string>
           <string>WEB-INF/classes/net/java/dev/sommer/foafssl/sesame/cache/GraphCache.class</string>
           <string>WEB-INF/classes/net/java/dev/sommer/foafssl/sesame/cache/GraphCacheLookup.class</string>
@@ -452,6 +451,7 @@
           <string>images/black-loader.gif</string>
           <string>images/rhizomer.new.png</string>
           <string>WEB-INF/classes/foafssl-identity-provider-0.5-SNAPSHOT.jar</string>
+          <string>WEB-INF/classes/META-INF/services/net.java.dev.sommer.foafssl.verifier.FoafSslVerifier</string>
           <string>WEB-INF/classes/foafssl-verifier-sesame-0.5-SNAPSHOT.jar</string>
           <string>WEB-INF/classes/foafssl-verifier-0.5-SNAPSHOT.jar</string>
           <string>WEB-INF/classes/logging.properties</string>
@@ -488,6 +488,7 @@
           <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/FiltreRhizomik.class</string>
           <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/SesameFoafSslRhizomer.class</string>
           <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/Iterator.class</string>
+          <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/SesameFoafSslRhizomer1.class</string>
           <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/IteratorFitxer.class</string>
           <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/fitxerUsuaris/Usuari.class</string>
           <string>WEB-INF/classes/net/rhizomik/rhizomer/authentication/fitxerUsuaris/Encriptar.class</string>
