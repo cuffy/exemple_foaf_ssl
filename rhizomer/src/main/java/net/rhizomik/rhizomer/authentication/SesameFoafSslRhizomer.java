@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.math.BigInteger;
 
 import java.security.PublicKey;
-import java.security.interfaces.DSAPublicKey;
 import java.security.interfaces.RSAPublicKey;
 import java.util.Arrays;
 
@@ -72,14 +71,15 @@ public class SesameFoafSslRhizomer extends FoafSslVerifier {
                 TupleQuery query = null;
                 query = rep.prepareTupleQuery(QueryLanguage.SPARQL,
                         "PREFIX foaf:   <http://xmlns.com/foaf/0.1/>"
-                        + "SELECT ?name"
-                        + "WHERE  { ?x foaf:name ?name }");
+                        + " SELECT DISTINCT ?name WHERE {"
+                        + " <"+webid.getWebId().toString()+"> foaf:knows ?a ."
+                        + " ?a foaf:name ?name}");
+                        //+ " WHERE  { ?a foaf:name ?name }");
                 TupleQueryResult answer = query.evaluate();
                 while (answer.hasNext()) {
                     BindingSet bindingSet = answer.next();
-                    System.out.println(bindingSet.getBinding("name"));
                     // success!
-                    return true;
+                    //return true;
                 }
             }
         } catch (RepositoryException ex) {
