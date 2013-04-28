@@ -31,6 +31,7 @@ public class FiltreRhizomik implements Filter {
 
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         HttpSession session = ((HttpServletRequest)request).getSession(true);
+        String usuari = null;
         if (request.getAttribute("javax.servlet.request.X509Certificate") == null) {
             request.setAttribute("javax.servlet.request.X509Certificate", new X509Certificate[]{this.x509Certificate});
             if (this.login.sha_de_autentificar(request)) {
@@ -39,8 +40,8 @@ public class FiltreRhizomik implements Filter {
                 this.login.obtenir_dades();
                 try{
                     if (this.login.son_valides()) {
-                        session.setAttribute(Constants.NOM_SESSIO_USUARI, this.login.getUsuari());
                         chain.doFilter(request, response);
+                        usuari = this.login.getUsuari();
                     } else {
                         this.login.mostrar_formulari(response);
                     }
@@ -50,8 +51,11 @@ public class FiltreRhizomik implements Filter {
             }
         } else {
             X509Certificate cert[] = (X509Certificate[])request.getAttribute("javax.servlet.request.X509Certificate");
-            session.setAttribute(Constants.NOM_SESSIO_USUARI, cert[0].getSubjectDN().toString());
             this.foaf_ssl.doFilter(request, response, chain);
+            usuari = cert[0].getSubjectDN().toString();
+        }
+        if(usuari != null){
+            session.setAttribute(Constants.NOM_SESSIO_USUARI, usuari);
         }
     }
     public void destroy() {

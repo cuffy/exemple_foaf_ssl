@@ -63,26 +63,53 @@ public class SesameFoafSslRhizomer extends FoafSslVerifier {
 
     @Override
     public boolean verify(WebIdClaim webid) {
+        System.out.println("****************************************");
         RepositoryConnection rep = null;
         try {
             rep = this.conectarFitxerRdf();
             PublicKey publicKey = webid.getVerifiedPublicKey();
             if (publicKey instanceof RSAPublicKey) {
                 TupleQuery query = null;
+                //Verifiquem que qui accedeixi es realment qui diu, comprovant la URL de WebID.
+                try {
+                    System.out.println("--------"+webid.getWebId());
+                    query = rep.prepareTupleQuery(QueryLanguage.SPARQL,
+                            "PREFIX cert: <http://www.w3.org/ns/auth/cert#>"
+                                    + "PREFIX rsa: <http://www.w3.org/ns/auth/rsa#>"
+                                    + "SELECT ?m ?e ?mod ?exp "
+                                    + "FROM <"+webid.getWebId()+">"
+                                    + "WHERE { "
+    + " { ?key cert:identity ?agent } "
+    + " UNION "
+    + " { ?agent cert:key ?key }"
+                                    + " ?key rsa:modulus ?m ;"
+                                    + " rsa:public_exponent ?e ."
+                                    + " OPTIONAL { ?m cert:hex ?mod . }"
+                                    + " OPTIONAL { ?e cert:decimal ?exp . }"
+                                    + "}");
+                } catch (MalformedQueryException e) {
+                    log.log(Level.SEVERE, "Error in Query String!", e);
+                    System.err.println("MAL FORMAT - 1");
+                    webid.fail("SERVER ERROR - Please warn administrator");
+                    return false;
+                }
                 query = rep.prepareTupleQuery(QueryLanguage.SPARQL,
                         "PREFIX foaf:   <http://xmlns.com/foaf/0.1/>"
                         + " SELECT DISTINCT ?name WHERE {"
-                        + " <"+webid.getWebId().toString()+"> foaf:knows ?a ."
+                        + " ?a foaf:knows <"+webid.getWebId().toString()+"> ."
                         + " ?a foaf:name ?name}");
-                        //+ " WHERE  { ?a foaf:name ?name }");
+                System.err.println("****************************** 2");
                 TupleQueryResult answer = query.evaluate();
                 while (answer.hasNext()) {
                     BindingSet bindingSet = answer.next();
+                    System.err.println("****************************** 3");
+                    System.err.println("******************************"+bindingSet.toString());
                     // success!
-                    //return true;
+                    return true;
                 }
             }
         } catch (RepositoryException ex) {
+            System.out.println("AAAAA");
             Logger.getLogger(SesameFoafSslRhizomer.class.getName()).log(Level.SEVERE, null, ex);
         } catch (MalformedQueryException e) {
             log.log(Level.SEVERE, "Error in Query String!", e);

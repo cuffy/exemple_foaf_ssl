@@ -10,16 +10,24 @@
   <foaf:givenname>Nombre</foaf:givenname>
   <foaf:family_name>Apellido</foaf:family_name>
   <foaf:nick>Apodo</foaf:nick>
+<foaf:knows>
+    <foaf:Person rdf:about="https://my-profile.eu/people/Maarc/card#me" />
+  </foaf:knows>
 </foaf:Person>
-
 <foaf:Person rdf:about="http://google.es/foo">
   <foaf:name>Leigh Dodds</foaf:name>
   <foaf:firstName>Leigh</foaf:firstName>
   <foaf:surname>Dodds</foaf:surname>
   <foaf:mbox_sha1sum>71b88e951cb5f07518d69e5bb49a45100fbc3ca5</foaf:mbox_sha1sum>
-  <foaf:knows>
-    <foaf:Person rdf:about="http://google.es/marc" />
-  </foaf:knows>
 </foaf:Person>
 
+<foaf:Person rdf:about="https://my-profile.eu/people/Maarc/card#me">
+  <foaf:name>Marc</foaf:name>
+  <foaf:firstName>Trepat</foaf:firstName>
+  <foaf:surname>Dodds</foaf:surname>
+  <foaf:mbox_sha1sum>71b88e951cb5f07518d69e5bb49a45100fbc3ca5</foaf:mbox_sha1sum>
+  <foaf:knows>
+    <foaf:Person rdf:about="http://google.es/foo" />
+  </foaf:knows>
+</foaf:Person>
 </rdf:RDF>
