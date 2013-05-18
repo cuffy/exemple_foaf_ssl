@@ -63,7 +63,6 @@ public class SesameFoafSslRhizomer extends FoafSslVerifier {
 
     @Override
     public boolean verify(WebIdClaim webid) {
-        System.out.println("****************************************");
         RepositoryConnection rep = null;
         try {
             rep = this.conectarFitxerRdf();
@@ -72,7 +71,6 @@ public class SesameFoafSslRhizomer extends FoafSslVerifier {
                 TupleQuery query = null;
                 //Verifiquem que qui accedeixi es realment qui diu, comprovant la URL de WebID.
                 try {
-                    System.out.println("--------"+webid.getWebId());
                     query = rep.prepareTupleQuery(QueryLanguage.SPARQL,
                             "PREFIX cert: <http://www.w3.org/ns/auth/cert#>"
                                     + "PREFIX rsa: <http://www.w3.org/ns/auth/rsa#>"
@@ -98,18 +96,14 @@ public class SesameFoafSslRhizomer extends FoafSslVerifier {
                         + " SELECT DISTINCT ?name WHERE {"
                         + " ?a foaf:knows <"+webid.getWebId().toString()+"> ."
                         + " ?a foaf:name ?name}");
-                System.err.println("****************************** 2");
                 TupleQueryResult answer = query.evaluate();
                 while (answer.hasNext()) {
                     BindingSet bindingSet = answer.next();
-                    System.err.println("****************************** 3");
-                    System.err.println("******************************"+bindingSet.toString());
                     // success!
                     return true;
                 }
             }
         } catch (RepositoryException ex) {
-            System.out.println("AAAAA");
             Logger.getLogger(SesameFoafSslRhizomer.class.getName()).log(Level.SEVERE, null, ex);
         } catch (MalformedQueryException e) {
             log.log(Level.SEVERE, "Error in Query String!", e);
@@ -135,19 +129,6 @@ public class SesameFoafSslRhizomer extends FoafSslVerifier {
         }
         return repository.getConnection();
     }
-        /*WebIdClaim web = null;
-        try {
-            web = new WebIdClaim(new java.net.URI(cadenaRuta), null);
-        } catch (URISyntaxException ex) {
-            System.out.println("1");
-        }
-        try {
-            web.setGraphName(new URL(cadenaRuta));
-        } catch (MalformedURLException ex) {
-            System.out.println("2");
-        }
-        return web;
-    }*/
 
     /**
      * Transform an RDF representation of a number into a BigInteger
